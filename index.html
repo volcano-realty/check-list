@@ -1,120 +1,299 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post-Gray Work Construction Sequence Checklist</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            padding: 20px;
-        }
-        .checklist {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
+        /* Responsive font scaling */
+        .title {
+            font-size: calc(1.5em + 2vw);
             color: #333;
         }
-        ul {
-            list-style-type: none;
-            padding-left: 20px;
+        .section-title {
+            font-size: calc(1.2em + 1.5vw);
+            color: #555;
         }
-        ul li {
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-        }
-        ul li input[type="checkbox"] {
-            margin-right: 10px;
+        .checklist-item {
+            font-size: calc(1em + 1vw);
         }
     </style>
 </head>
-<body>
-<div class="checklist">
-    <h1>Construction Sequence Checklist</h1>
-    <h2>Complete Gray Work</h2>
-    <ul>
-        <li><input type="checkbox"> Roof electrical.<br/>Cableado eléctrico en el techo.</li>
-        <li><input type="checkbox"> Roof wood protection.<br/>Protección de la madera del techo.</li>
-    </ul>
+<body class="bg-light py-3">
 
-    <h2>Priming and Painting the Walls</h2>
-    <ul>
-        <li><input type="checkbox"> Ensure all surfaces are clean and dry before starting.<br/>Asegúrese de que todas las superficies estén limpias y secas antes de comenzar.</li>
-        <li><input type="checkbox"> Apply primer to the walls and ceilings for proper adhesion.<br/>Aplique imprimación a las paredes y techos para una correcta adhesión.</li>
-    </ul>
+<div class="container checklist">
+    <div class="card shadow-sm">
+        <div class="card-header text-white text-center">
+            <h1 class="title mb-0">Construction Sequence Checklist</h1>
+        </div>
+        <div class="card-body p-4">
 
-    <!-- More sections can be added here -->
-    <h2>Polishing the Concrete Floors</h2>
-    <ul>
-        <li><input type="checkbox"> Remove any construction debris and sweep the floors thoroughly.<br/>Retire los escombros de la construcción y barra los pisos a fondo.</li>
-        <li><input type="checkbox"> Wash the floors to remove dust and allow them to dry completely.<br/>Lave los pisos para eliminar el polvo y déjelos secar completamente.</li>
-        <li><input type="checkbox"> Start with coarse grit pads to level and smooth the floor surface.<br/>Comience con almohadillas de grano grueso para nivelar y alisar la superficie del piso.</li>
-        <li><input type="checkbox"> Gradually move to finer grits until achieving the desired level of gloss.<br/>Pase gradualmente a granos más finos hasta lograr el nivel de brillo deseado.</li>
-        <li><input type="checkbox"> Apply a concrete sealer to protect the polished surface.<br/>Aplique un sellador de concreto para proteger la superficie pulida.</li>
-    </ul>
+            <!-- Section 1: Complete Gray Work -->
+            <div class="mb-4">
+                <h2 class="section-title">Complete Gray Work</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex align-items-start">
+                        <input type="checkbox" class="form-check-input me-3 mt-1">
+                        <div>
+                            <span class="checklist-item">Roof electrical.</span><br>
+                            <small class="text-muted">Cableado eléctrico en el techo.</small>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-start">
+                        <input type="checkbox" class="form-check-input me-3 mt-1">
+                        <div>
+                            <span class="checklist-item">Roof wood protection.</span><br>
+                            <small class="text-muted">Protección de la madera del techo.</small>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
-    <h2>Installing Fixed Elements</h2>
-    <ul>
-        <li><input type="checkbox"> Verify that floors are polished and sealed before installing cabinets and counters.<br/>Verifique que los pisos estén pulidos y sellados antes de instalar los gabinetes y mostradores.</li>
-        <li><input type="checkbox"> Measure and mark locations for cabinetry to ensure precise installation.<br/>Mida y marque las ubicaciones para los gabinetes para garantizar una instalación precisa.</li>
-        <li><input type="checkbox"> Secure cabinets and counters, checking for level alignment.<br/>Asegure los gabinetes y mostradores, verificando la alineación del nivel.</li>
-        <li><input type="checkbox"> Install large appliances if they do not interfere with further work.<br/>Instale los electrodomésticos grandes si no interfieren con el trabajo posterior.</li>
-    </ul>
+            <!-- Section 2: Priming and Painting the Walls -->
+            <div class="mb-4">
+                <h2 class="section-title">Priming and Painting the Walls</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex align-items-start">
+                        <input type="checkbox" class="form-check-input me-3 mt-1">
+                        <div>
+                            <span class="checklist-item">Ensure all surfaces are clean and dry before starting.</span><br>
+                            <small class="text-muted">Asegúrese de que todas las superficies estén limpias y secas antes de comenzar.</small>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-start">
+                        <input type="checkbox" class="form-check-input me-3 mt-1">
+                        <div>
+                            <span class="checklist-item">Apply primer to the walls and ceilings for proper adhesion.</span><br>
+                            <small class="text-muted">Aplique imprimación a las paredes y techos para una correcta adhesión.</small>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
-    <h2>Electrical and Plumbing Finishings</h2>
-    <ul>
-        <li><input type="checkbox"> Install light fixtures, outlets, and switches.<br/>Instale las luminarias, enchufes e interruptores.</li>
-        <li><input type="checkbox"> Test all electrical connections for safety and proper operation.<br/>Pruebe todas las conexiones eléctricas para verificar la seguridad y el funcionamiento adecuado.</li>
-        <li><input type="checkbox"> Install sinks, faucets, showerheads, and toilets.<br/>Instale fregaderos, grifos, duchas y retretes.</li>
-        <li><input type="checkbox"> Connect water supply lines and verify there are no leaks.<br/>Conecte las líneas de suministro de agua y verifique que no haya fugas.</li>
-    </ul>
+            <!-- Section 3: Polishing the Concrete Floors -->
+            <div class="mb-4">
+                <h2 class="section-title">Polishing the Concrete Floors</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex align-items-start">
+                        <input type="checkbox" class="form-check-input me-3 mt-1">
+                        <div>
+                            <span class="checklist-item">Remove any construction debris and sweep the floors thoroughly.</span><br>
+                            <small class="text-muted">Retire los escombros de la construcción y barra los pisos a fondo.</small>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-start">
+                        <input type="checkbox" class="form-check-input me-3 mt-1">
+                        <div>
+                            <span class="checklist-item">Wash the floors to remove dust and allow them to dry completely.</span><br>
+                            <small class="text-muted">Lave los pisos para eliminar el polvo y déjelos secar completamente.</small>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-start">
+                        <input type="checkbox" class="form-check-input me-3 mt-1">
+                        <div>
+                            <span class="checklist-item">Start with coarse grit pads to level and smooth the floor surface.</span><br>
+                            <small class="text-muted">Comience con almohadillas de grano grueso para nivelar y alisar la superficie del piso.</small>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-start">
+                        <input type="checkbox" class="form-check-input me-3 mt-1">
+                        <div>
+                            <span class="checklist-item">Gradually move to finer grits until achieving the desired level of gloss.</span><br>
+                            <small class="text-muted">Pase gradualmente a granos más finos hasta lograr el nivel de brillo deseado.</small>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-start">
+                        <input type="checkbox" class="form-check-input me-3 mt-1">
+                        <div>
+                            <span class="checklist-item">Apply a concrete sealer to protect the polished surface.</span><br>
+                            <small class="text-muted">Aplique un sellador de concreto para proteger la superficie pulida.</small>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
-    <h2>Final Painting and Touch-Ups</h2>
-    <ul>
-        <li><input type="checkbox"> Apply the final coat of paint to walls and ceilings.<br/>Aplique la capa final de pintura en las paredes y techos.</li>
-        <li><input type="checkbox"> Inspect all painted surfaces for scuffs, chips, or inconsistencies.<br/>Inspeccione todas las superficies pintadas en busca de rayones, astillas o inconsistencias.</li>
-        <li><input type="checkbox"> Use a fine brush for precision touch-ups as needed.<br/>Use un pincel fino para retoques de precisión según sea necesario.</li>
-    </ul>
+            <!-- Section 4: Installing Fixed Elements -->
+            <div class="mb-4">
+                <h2 class="section-title">Installing Fixed Elements</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex align-items-start">
+                        <input type="checkbox" class="form-check-input me-3 mt-1">
+                        <div>
+                            <span class="checklist-item">Verify that floors are polished and sealed before installing cabinets and counters.</span><br>
+                            <small class="text-muted">Verifique que los pisos estén pulidos y sellados antes de instalar los gabinetes y mostradores.</small>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-start">
+                        <input type="checkbox" class="form-check-input me-3 mt-1">
+                        <div>
+                            <span class="checklist-item">Measure and mark locations for cabinetry to ensure precise installation.</span><br>
+                            <small class="text-muted">Mida y marque las ubicaciones para los gabinetes para garantizar una instalación precisa.</small>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-start">
+                        <input type="checkbox" class="form-check-input me-3 mt-1">
+                        <div>
+                            <span class="checklist-item">Secure cabinets and counters, checking for level alignment.</span><br>
+                            <small class="text-muted">Asegure los gabinetes y mostradores, verificando la alineación del nivel.</small>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-start">
+                        <input type="checkbox" class="form-check-input me-3 mt-1">
+                        <div>
+                            <span class="checklist-item">Install large appliances if they do not interfere with further work.</span><br>
+                            <small class="text-muted">Instale los electrodomésticos grandes si no interfieren con el trabajo posterior.</small>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
-    <h2>Door and Trim Installations</h2>
-    <ul>
-        <li><input type="checkbox"> Measure and align interior doors, ensuring they swing correctly.<br/>Mida y alinee las puertas interiores, asegurándose de que giren correctamente.</li>
-        <li><input type="checkbox"> Install door hardware such as handles, locks, and stoppers.<br/>Instale herrajes de puertas como manijas, cerraduras y topes.</li>
-        <li><input type="checkbox"> Cut trim and baseboards to fit precisely against walls and floors.<br/>Corte las molduras y zócalos para que encajen perfectamente contra las paredes y los pisos.</li>
-        <li><input type="checkbox"> Apply caulking around windows, doors, and trim.<br/>Aplique sellador alrededor de ventanas, puertas y molduras.</li>
-    </ul>
+            <!-- Section 5: Electrical and Plumbing Finishings -->
+            <div class="mb-4">
+                <h2 class="section-title">Electrical and Plumbing Finishings</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex align-items-start">
+                        <input type="checkbox" class="form-check-input me-3 mt-1">
+                        <div>
+                            <span class="checklist-item">Install light fixtures, outlets, and switches.</span><br>
+                            <small class="text-muted">Instale las luminarias, enchufes e interruptores.</small>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-start">
+                        <input type="checkbox" class="form-check-input me-3 mt-1">
+                        <div>
+                            <span class="checklist-item">Test all electrical connections for safety and proper operation.</span><br>
+                            <small class="text-muted">Pruebe todas las conexiones eléctricas para verificar la seguridad y el funcionamiento adecuado.</small>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-start">
+                        <input type="checkbox" class="form-check-input me-3 mt-1">
+                        <div>
+                            <span class="checklist-item">Install sinks, faucets, showerheads, and toilets.</span><br>
+                            <small class="text-muted">Instale fregaderos, grifos, duchas y retretes.</small>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-start">
+                        <input type="checkbox" class="form-check-input me-3 mt-1">
+                        <div>
+                            <span class="checklist-item">Connect water supply lines and verify there are no leaks.</span><br>
+                            <small class="text-muted">Conecte las líneas de suministro de agua y verifique que no haya fugas.</small>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
-    <h2>Final Clean-Up</h2>
-    <ul>
-        <li><input type="checkbox"> Sweep and vacuum all floors, paying attention to corners and edges.<br/>Barra y aspire todos los pisos, prestando atención a las esquinas y bordes.</li>
-        <li><input type="checkbox"> Clean windows, light fixtures, and surfaces to remove dust and fingerprints.<br/>Limpie las ventanas, luminarias y superficies para eliminar el polvo y las huellas dactilares.</li>
-        <li><input type="checkbox"> Mop floors to leave a spotless finish.<br/>Trapee los pisos para dejarlos impecables.</li>
-        <li><input type="checkbox"> Walk through each room and create a list of any remaining touch-ups or issues.<br/>Recorra cada habitación y cree una lista de los retoques o problemas restantes.</li>
-    </ul>
+            <!-- Section 6: Final Painting and Touch-Ups -->
+            <div class="mb-4">
+                <h2 class="section-title">Final Painting and Touch-Ups</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex align-items-start">
+                        <input type="checkbox" class="form-check-input me-3 mt-1">
+                        <div>
+                            <span class="checklist-item">Apply the final coat of paint to walls and ceilings.</span><br>
+                            <small class="text-muted">Aplique la capa final de pintura en las paredes y techos.</small>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-start">
+                        <input type="checkbox" class="form-check-input me-3 mt-1">
+                        <div>
+                            <span class="checklist-item">Inspect all painted surfaces for scuffs, chips, or inconsistencies.</span><br>
+                            <small class="text-muted">Inspeccione todas las superficies pintadas en busca de rayones, astillas o inconsistencias.</small>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-start">
+                        <input type="checkbox" class="form-check-input me-3 mt-1">
+                        <div>
+                            <span class="checklist-item">Use a fine brush for precision touch-ups as needed.</span><br>
+                            <small class="text-muted">Use un pincel fino para retoques de precisión según sea necesario.</small>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
+            <!-- Section 7: Door and Trim Installations -->
+            <div class="mb-4">
+                <h2 class="section-title">Door and Trim Installations</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex align-items-start">
+                        <input type="checkbox" class="form-check-input me-3 mt-1">
+                        <div>
+                            <span class="checklist-item">Measure and align interior doors, ensuring they swing correctly.</span><br>
+                            <small class="text-muted">Mida y alinee las puertas interiores, asegurándose de que giren correctamente.</small>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-start">
+                        <input type="checkbox" class="form-check-input me-3 mt-1">
+                        <div>
+                            <span class="checklist-item">Install door hardware such as handles, locks, and stoppers.</span><br>
+                            <small class="text-muted">Instale herrajes de puertas como manijas, cerraduras y topes.</small>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-start">
+                        <input type="checkbox" class="form-check-input me-3 mt-1">
+                        <div>
+                            <span class="checklist-item">Cut trim and baseboards to fit precisely against walls and floors.</span><br>
+                            <small class="text-muted">Corte las molduras y zócalos para que encajen perfectamente contra las paredes y los pisos.</small>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-start">
+                        <input type="checkbox" class="form-check-input me-3 mt-1">
+                        <div>
+                            <span class="checklist-item">Apply caulking around windows, doors, and trim.</span><br>
+                            <small class="text-muted">Aplique sellador alrededor de ventanas, puertas y molduras.</small>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Section 8: Final Clean-Up -->
+            <div class="mb-4">
+                <h2 class="section-title">Final Clean-Up</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex align-items-start">
+                        <input type="checkbox" class="form-check-input me-3 mt-1">
+                        <div>
+                            <span class="checklist-item">Sweep and vacuum all floors, paying attention to corners and edges.</span><br>
+                            <small class="text-muted">Barra y aspire todos los pisos, prestando atención a las esquinas y bordes.</small>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-start">
+                        <input type="checkbox" class="form-check-input me-3 mt-1">
+                        <div>
+                            <span class="checklist-item">Clean windows, light fixtures, and surfaces to remove dust and fingerprints.</span><br>
+                            <small class="text-muted">Limpie las ventanas, luminarias y superficies para eliminar el polvo y las huellas dactilares.</small>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-start">
+                        <input type="checkbox" class="form-check-input me-3 mt-1">
+                        <div>
+                            <span class="checklist-item">Mop floors to leave a spotless finish.</span><br>
+                            <small class="text-muted">Trapee los pisos para dejarlos impecables.</small>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-start">
+                        <input type="checkbox" class="form-check-input me-3 mt-1">
+                        <div>
+                            <span class="checklist-item">Walk through each room and create a list of any remaining touch-ups or issues.</span><br>
+                            <small class="text-muted">Recorra cada habitación y cree una lista de los retoques o problemas restantes.</small>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-
-        // Load the saved states for each item based on text content
         checkboxes.forEach(checkbox => {
             const itemText = checkbox.parentElement.textContent.trim();
             const isChecked = localStorage.getItem(itemText) === 'true';
             checkbox.checked = isChecked;
 
-            // Save the state of each checkbox on change
             checkbox.addEventListener('change', () => {
                 localStorage.setItem(itemText, checkbox.checked);
             });
@@ -123,4 +302,3 @@
 </script>
 </body>
 </html>
-
